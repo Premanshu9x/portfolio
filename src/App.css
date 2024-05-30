@@ -1,0 +1,361 @@
+*::-webkit-scrollbar {
+	width: 0;
+	/* Set the width of the scrollbar to 0 */
+	background: transparent;
+	/* Make the background of the scrollbar transparent */
+}
+
+body {
+  background-color: #060417;
+  font-family: 'Poppins';
+}
+
+.nav-button {
+  background-color: rgb(111, 0, 255);
+  color: white;
+  border-radius: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Guerrilla&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Protest Guerrilla', sans-serif; */
+
+.navbar a {
+  font-family: 'Protest Guerrilla', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.Abutton::before{
+  content: '';
+  position: absolute;
+  background-color: rgb(111, 0, 255);
+  height: 4px;
+  width: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.Abutton:hover::before{
+  width: 5%;
+}
+
+.navbar-toggler {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.navbar button:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.Hero {
+  font-family: 'Poppins';
+}
+
+.Hero h1 {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+
+.Hero h1:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  bottom: 3.5rem;
+  left: 50%;
+  width: 40%;
+  height: 4px;
+  background-color: rgb(111, 0, 255);
+}
+
+.Hero h6 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.Hero img {
+  width: 300px;
+  height: auto;
+  animation: upDown 1.5s infinite alternate;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(-20px);
+    /* Start position */
+  }
+
+  100% {
+    transform: translateY(50px);
+    /* End position */
+  }
+}
+
+.Skills i{
+  color: rgb(111, 0, 255);
+}
+
+.Skills-Section{
+  font-family: 'Poppins';
+  color: antiquewhite;
+}
+
+.skill-select{
+  width: 12rem;
+  padding: 2rem;
+  border: 2px solid rgb(111, 0, 255);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .skill-select{
+    width: 9rem;
+    padding: 1.5rem;
+  }
+}
+
+.Skills-Section{
+  position: relative;
+}
+
+.Technical::after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: 22rem;
+  width: 40%;
+  height: 4px;
+  background-color: rgb(111, 0, 255);
+}
+
+@media only screen and (max-width: 768px) {
+  .Technical::after {
+    left: 17rem;
+    width: 25%;
+  }
+}
+
+.Active{
+  background-color: rgb(111, 0, 255);
+  color: white;
+}
+
+.Progress-section{
+  background-color: rgba(111, 0, 255, 0.1);
+  border: 2px solid rgb(111, 0, 255);
+  border-radius: 10px;
+  padding: 2rem;
+  height: 375px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Progress-section{
+    margin-top: 3rem;
+    width: 80%;
+  }
+}
+
+.experience {
+  width: 90% !important;
+  border: 1.5px solid rgb(111, 0, 255);
+  background-color: rgba(111, 0, 255, 0.1);
+  height: 280px;
+  padding: 2rem;
+  border-radius: 10px;
+  font-family: 'Poppins';
+}
+
+@media only screen and (max-width: 768px) {
+  .experience {
+    width: 90% !important;
+    border: 1.5px solid rgb(111, 0, 255);
+    background-color: rgba(111, 0, 255, 0.1);
+    height: 350px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Poppins';
+  }
+}
+
+.experience ul {
+  font-size: 0.7rem;
+  line-height: 1rem;
+  word-spacing: 0.15rem;
+}
+
+.experience ul li{
+  margin-top: 5px;
+}
+
+.experience ul li::marker{
+  color: rgb(111, 0, 255);
+}
+
+.experience h6 {
+  font-size: smaller;
+  background-color: rgb(111, 0, 255);
+  border-radius: 3px;
+  width: max-content;
+  padding: 0 4px;
+}
+
+.experience h4 {
+  font-size: 1.2rem;
+}
+
+.experience a {
+  text-decoration: none;
+  color: inherit;
+  font-size: smaller;
+  background-color: rgb(111, 0, 255);
+  border-radius: 3px;
+  padding: 0 4px;
+}
+
+.Work h2::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  background-color: rgb(111, 0, 255);
+  height: 4px;
+  bottom: 0;
+  left: 19rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .Work h2::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-color: rgb(111, 0, 255);
+    height: 4px;
+    bottom: 0;
+    left: 15rem;
+  
+  }
+}
+
+.Contact h2::after {
+  content: '';
+  position: absolute;
+  left: 10rem;
+  bottom: 0;
+  width: 60%;
+  background-color: rgb(111, 0, 255);
+  height: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Contact h2::after {
+    content: '';
+    position: absolute;
+    left: 8rem;
+    bottom: 0;
+    width: 60%;
+    background-color: rgb(111, 0, 255);
+    height: 4px;
+  }
+}
+
+.Contact i {
+  padding: 1rem;
+  border: 1px solid rgb(111, 0, 255);
+  border-radius: 5px;
+}
+
+.Social {
+  width: 90%;
+  border: 1px solid rgb(111, 0, 255);
+  border-radius: 10px;
+  background-color: rgba(111, 0, 255, 0.1);
+}
+
+.bold {
+  font-size: smaller;
+  letter-spacing: 0.1rem;
+}
+
+.Input1 {
+  border: 1px solid rgb(111, 0, 255);
+  border-radius: 10px;
+  background-color: rgba(111, 0, 255, 0.1);
+  width: 48%;
+  height: 3rem;
+}
+
+.Input1::placeholder {
+  color: white;
+  padding-left: 1rem;
+  font-size: smaller;
+}
+
+.Input2{
+  border: 1px solid rgb(111, 0, 255);
+  border-radius: 10px;
+  background-color: rgba(111, 0, 255, 0.1);
+  height: 3rem;
+}
+
+.Input2::placeholder {
+  color: white;
+  padding-left: 1rem;
+  font-size: smaller;
+}
+
+.Area::placeholder {
+  padding-top: 1rem;
+}
+
+.button {
+  border: 1px solid rgb(111, 0, 255);
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(111, 0, 255);
+  width: 100%;
+  color: wheat;
+  height: 2.5rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .Form {
+    margin-top: 2rem;
+  }
+
+  .Form button {
+    margin-top: 1.5rem;
+  }
+}
+
+.Details img {
+  width: 400px;
+  height: auto;
+}
+
+.Details {
+  font-family: 'Poppins';
+  color: antiquewhite;
+}
+
+.About b{
+  letter-spacing: 0.1rem;
+}
+
+.About a{
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(111, 0, 255);
+  width: max-content;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+
